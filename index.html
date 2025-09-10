@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Materi Kalkulus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1 id="home-btn">
+                <span>Kalkulus</span> 1PTI52
+            </h1>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div id="app">
+            
+            <!-- Landing Page Section -->
+            <div id="landing-section" class="card text-center">
+                <h2>Master the Fundamentals of Calculus</h2>
+                <p>Our interactive lessons and quizzes make learning calculus intuitive and engaging. Select a chapter below to start your journey.</p>
+                <div class="chapter-container">
+                    <div class="chapter-card" data-unit="0">
+                        <h3>Meeting 1: Limits</h3>
+                        <p class="chapter-description">Understand the foundational concept of what happens as a function gets infinitely close to a point.</p>
+                    </div>
+                    <div class="chapter-card" data-unit="1">
+                        <h3>Unit 2: Derivatives</h3>
+                        <p class="chapter-description">Learn how to find the instantaneous rate of change and the slope of a curve.</p>
+                    </div>
+                    <div class="chapter-card" data-unit="2">
+                        <h3>Unit 3: Integrals</h3>
+                        <p class="chapter-description">Discover how to find the area under a curve and reverse the process of differentiation.</p>
+                    </div>
+                    <div class="chapter-card" data-unit="2">
+                        <h3>Unit 4: Integrals</h3>
+                        <p class="chapter-description">Discover how to find the area under a curve and reverse the process of differentiation.</p>
+                    </div>
+                    <div class="chapter-card" data-unit="2">
+                        <h3>Unit 5: Integrals</h3>
+                        <p class="chapter-description">Discover how to find the area under a curve and reverse the process of differentiation.</p>
+                    </div>
+                    <div class="chapter-card" data-unit="2">
+                        <h3>Unit 6: Integrals</h3>
+                        <p class="chapter-description">Discover how to find the area under a curve and reverse the process of differentiation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Material Section (Initially Hidden) -->
+            <div id="learning-section" class="hidden card">
+                <h2 id="unit-title"></h2>
+                <div id="unit-content" class="prose">
+                    <!-- Dynamic content will be loaded here -->
+                </div>
+                <div class="text-center" style="margin-top: 2rem;">
+                    <button id="start-quiz-btn" class="btn btn-primary">
+                        Ready? Take the Quiz!
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quiz Section (Initially Hidden) -->
+            <div id="quiz-section" class="hidden card">
+                <div class="quiz-header">
+                     <h2>Unit Quiz</h2>
+                     <div class="quiz-counter">
+                        <span id="question-counter"></span> / <span id="total-questions"></span>
+                     </div>
+                </div>
+               
+                <div id="progress-bar-container">
+                    <div id="progress-bar" style="width: 0%"></div>
+                </div>
+                
+                <p id="question-text"></p>
+                
+                <div id="options-container">
+                    <!-- Options will be dynamically inserted here -->
+                </div>
+                
+                <div class="quiz-footer">
+                    <button id="submit-btn" class="btn btn-secondary">
+                        Submit Answer
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Results Section (Initially Hidden) -->
+            <div id="results-section" class="hidden card text-center">
+                <h2>Quiz Completed!</h2>
+                <p style="margin-bottom: 0.5rem;">Your score:</p>
+                <p id="score-text"></p>
+                <p id="feedback-text"></p>
+                <div>
+                    <button id="retry-quiz-btn" class="btn btn-light">
+                        Retry Quiz
+                    </button>
+                    <button id="next-unit-btn" class="btn btn-primary">
+                        Next Unit
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+<script src="script.js"></script>
+
+</body>
+</html>
+
